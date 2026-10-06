@@ -150,5 +150,12 @@
 ### timeout 전체 정리
 ![img_10.png](img/img_10.png)
 
+---
 
+# Consumer에도 존재하는 동일한 설정들
+- client.id
+- request.timeout.ms
+- retry.backoff.ms
+- send.buffer.bytes
+- recive.buffer.bytes
 
