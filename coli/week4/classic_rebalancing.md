@@ -1,14 +1,14 @@
 # Classic Consumer - Rebalancing 심화
 
 ### 요약본
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 ## 현재 상황
 - Broker1이 consumer group의 group coordinator(heartbeat 통신 담당)
 - consumer.poll()로 요청 읽어옴
   - 할당된 partition 들이 있는 브로커로 FetchRequest를 보내어 레코드 읽는 코드가 내부에 있음
 - C1이 파티션 0,2 담당, C2가 파티션 1 담당 -> C3 추가되어 리밸런싱 필요한 상황
-![img.png](img.png)
+![img.png](img/img.png)
 
 
 ### step1. 1차 JoinGroup을 통한 member_id 발급
@@ -87,7 +87,7 @@
 ---
 
 ## Cooperative와의 차이점(2Phas)
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 ### step1. 첫번째 Join-SyncGroup -> Sync에 변동사안 담아 1차 응답 -> 선택적 Revoke
 - 파티션 할당만 재조정하여 각 컨슈머에 할당한 파티션 전달
