@@ -4,12 +4,12 @@
 - 강의: 쉬운코드 [⛵️ Kafka 챌린지 (2026)](https://www.youtube.com/playlist?list=PLcXyemr8ZeoTypO31Bxl8MxtE1yqGAP1s) — 주 2개 시청 + 1개 요약 (1~5부 시청 완료)
 - 책: 『실전 카프카 개발부터 운영까지』(고승범, 책만, 총 512쪽) — 강의를 모두 따라잡은 W6부터 주 40p 내외
 
-| 주차 | 기간 (토~금) | 강의 시청 | 강의 요약 | 책 (페이지는 추정) | 체크 |
-|---|---|---|---|---|---|
-| W1 | 10/03 ~ 10/09 | 6부 리더 다운과 리더 에포크, 7부 Consumer 기본기 | 1부 카프카란 무엇인가? | - | [ ] |
-| W2 | 10/10 ~ 10/16 | 8부 Consumer Rebalancing, 9부 리밸런싱 동작 심화 | 2부 카프카의 주요 개념들 | - | [ ] |
-| W3 | 10/17 ~ 10/23 | 10부 AsyncKafkaConsumer, 11부 offset commit | 3부 Producer와 Record | - | [ ] |
-| W4 | 10/24 ~ 10/30 | 12부 auto commit, 13부 manual commit | 4부 Producer 주요 설정 | - | [ ] |
+| 주차 | 기간 (토~금) | 강의 시청 | 강의 요약 | 책 (페이지는 추정) | 체크  |
+|---|---|---|---|---|-----|
+| W1 | 10/03 ~ 10/09 | 6부 리더 다운과 리더 에포크, 7부 Consumer 기본기 | 1부 카프카란 무엇인가? | - | [x] |
+| W2 | 10/10 ~ 10/16 | 8부 Consumer Rebalancing, 9부 리밸런싱 동작 심화 | 2부 카프카의 주요 개념들 | - | [x] |
+| W3 | 10/17 ~ 10/23 | 10부 AsyncKafkaConsumer, 11부 offset commit | 3부 Producer와 Record | - | [x] |
+| W4 | 10/24 ~ 10/30 | 12부 auto commit, 13부 manual commit | 4부 Producer 주요 설정 | - | [x] |
 | W5 | 10/31 ~ 11/06 | 14부 ConsumerRebalanceListener, 15부 (업로드 시) | 5부 Commit과 High Watermark | - | [ ] |
 | W6 | 11/07 ~ 11/13 | 신규 업로드분 | 6부 리더 다운과 리더 에포크 | 1장 카프카 개요 + 3.1 카프카 기초 다지기 · p.21~40, p.73~87 (약 35p) | [ ] |
 | W7 | 11/14 ~ 11/20 | 신규 업로드분 | 7부 Consumer 기본기 | 3.2 핵심 개념 ~ 3.5 정리 · p.88~122 (약 35p) | [ ] |
