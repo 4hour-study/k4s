@@ -45,7 +45,7 @@
 ## commited offset vs position
 - commited offset은 Broker 내부에서 관리되는 단일 진실값
 - position은 consumer가 자체적으로 관리하는 Fetch의 기준
-![img.png](img.png)
+![img.png](img/img.png)
 
 ## offset commit이 왜 중요한가?
 - 컨슈머 그룹 리밸런싱 -> 파티션에 대해 처음 로드 시 어디서부터 파티션을 소비해야할지 모름
@@ -66,7 +66,7 @@
 ex) 
 - offsets.topic.num.partitions = 50, analyzer-group.hasCode() = 201
   - Math.abs(201%50) -> 1번 파티션
-  - ![img_1.png](img_1.png)
+  - ![img_1.png](img/img_1.png)
   - 1번 파티션의 Leader가 있는 Broker1이 Group Coordinator가 됨
 
 - 관련 브로커 설정
@@ -74,7 +74,7 @@ ex)
   - offsets.topic.replication.factor(3) : __consumer_offsets 토픽의 replication factor
 
 ## Commited Offset은 어떤 형태로 저장되는가?
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 - 내부적으로 저장할 때 로그 컴팩션(Log Compaction)으로 관리
   - 가장 마지막에 커밋된 최신 레코드 1개만 남기고 과거 레코드는 정리
   - 즉 가장 최신의 group-partition : commit 최신값만 유지
@@ -88,7 +88,7 @@ ex)
     - 컨슈머 그룹이 더이상 토픽을 구독하지 않을 때
     - 컨슈머 그룹이 비게 되었을 때 
 - auto.offset.reset에 따라 동작
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 
 ## commited offset이 가리키는 레코드가 없으면?
@@ -99,10 +99,10 @@ ex)
 
 - 레코드 보관 관련 설정
   - 각각 ms -> minutes -> hours 순으로 설정이 적용됨
-  - ![img_4.png](img_4.png)
+  - ![img_4.png](img/img_4.png)
 
 ## Consumer Lag
-![img_5.png](img_5.png)
+![img_5.png](img/img_5.png)
 - Lag : LEO - commited offset
 - 컨슈머가 아직 따라가지 못하고 밀려 있는 메시지 수
 - 어떤 라이브러리는 브로커 기준 commit offset이 아니라 position을 기준으로 표현하기도 함
